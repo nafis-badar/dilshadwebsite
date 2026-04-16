@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr Shad Dental Care</title>
+  <meta
+    name="description"
+    content="Interactive dentist website for Dr Shad Dental Care and Hashmi Dental Clinic with doctor details, timings, and contact information."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="#home" aria-label="Dr Shad Dental Care home">
+          <span class="brand-mark">
+            <img src="assets/dr-shad-logo.svg" alt="Dr Shad Dental Care logo">
+          </span>
+          <span>
+            <strong>Dr Shad</strong>
+            <em>Dental Care</em>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#experience">Experience</a>
+          <a href="#results">Results</a>
+          <a href="#contact">Book</a>
+        </div>
+      </nav>
+
+      <section class="hero-grid" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Creative Dentistry / Brighter Smiles / Gentle Care</p>
+          <h1>Trusted dental care with bright smiles, gentle treatment, and a creative tooth-first experience.</h1>
+          <p class="lead">
+            Meet Dr Dilshad Shakil Hasmi and Dr Shadmaa Afrin for caring consultations, restorative treatment,
+            family dentistry, and smile-focused care across two Kolkata clinics.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Book a Visit</a>
+            <button class="button button-secondary" type="button" data-scroll="#services">Explore Care</button>
+          </div>
+          <div class="hero-stats">
+            <article>
+              <strong>4.9/5</strong>
+              <span>Patient trust</span>
+            </article>
+            <article>
+              <strong>2 clinics</strong>
+              <span>Kolkata locations</span>
+            </article>
+            <article>
+              <strong>Expert care</strong>
+              <span>BDS (Hons), WBUHS</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="spark spark-a"></div>
+          <div class="spark spark-b"></div>
+          <div class="spark spark-c"></div>
+          <div class="tooth-stage">
+            <div class="tooth-card">
+              <div class="tooth-glow"></div>
+              <div class="tooth-icon">
+                <span class="tooth-shine"></span>
+              </div>
+              <div class="tooth-caption">
+                <h2>Healthy Smile Care</h2>
+                <p>Hover over the smile meter below to see the glow of confident dental care.</p>
+              </div>
+              <div class="smile-meter" id="smile-meter">
+                <div class="smile-meter-fill"></div>
+                <div class="smile-meter-labels">
+                  <span>Fresh</span>
+                  <span>Radiant</span>
+                  <span>Showtime</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section section-soft" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Treatment Menu</p>
+          <h2>Click through care designed around comfort and aesthetic detail.</h2>
+        </div>
+        <div class="service-browser">
+          <div class="service-tabs" role="tablist" aria-label="Dental service categories">
+            <button class="service-tab is-active" type="button" data-service="preventive" role="tab" aria-selected="true">Preventive</button>
+            <button class="service-tab" type="button" data-service="cosmetic" role="tab" aria-selected="false">Cosmetic</button>
+            <button class="service-tab" type="button" data-service="restorative" role="tab" aria-selected="false">Restorative</button>
+            <button class="service-tab" type="button" data-service="kids" role="tab" aria-selected="false">Family Care</button>
+          </div>
+          <div class="service-panel" id="service-panel">
+            <div class="service-badge">Preventive Care</div>
+            <h3>Cleanings, diagnostics, and enamel protection with a relaxed pace.</h3>
+            <p>
+              High-resolution scans, gentle polishing, and personalized maintenance plans keep every smile bright
+              without feeling clinical or cold.
+            </p>
+            <ul class="feature-list">
+              <li>Airy hygiene suites with music-friendly appointments</li>
+              <li>Digital imaging for precise, low-stress checkups</li>
+              <li>Fluoride and night-guard plans tailored to your bite</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="doctors">
+        <div class="section-heading">
+          <p class="eyebrow">Consultant Dentists</p>
+          <h2>Experienced oral and dental surgeons guiding every visit with clarity and care.</h2>
+        </div>
+        <div class="doctor-grid">
+          <article class="doctor-card">
+            <div class="doctor-badge">Lead Consultant</div>
+            <h3>Dr Dilshad Shakil Hasmi</h3>
+            <p class="doctor-qualification">BDS(Hons), WBUHS</p>
+            <p>Consultant oral and dental surgeon offering preventive, restorative, and smile-focused care.</p>
+          </article>
+          <article class="doctor-card">
+            <div class="doctor-badge">Consultant Surgeon</div>
+            <h3>Dr Shadmaa Afrin</h3>
+            <p class="doctor-qualification">BDS(Hons), WBUHS</p>
+            <p>Consultant oral and dental surgeon known for gentle care, patient comfort, and family-friendly visits.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive Studio</p>
+          <h2>Choose the mood of your visit and watch the environment adapt.</h2>
+        </div>
+        <div class="experience-grid">
+          <div class="mood-panel">
+            <div class="mood-controls" aria-label="Select appointment mood">
+              <button class="mood-button is-active" type="button" data-mood="calm">Calm</button>
+              <button class="mood-button" type="button" data-mood="fresh">Fresh</button>
+              <button class="mood-button" type="button" data-mood="glow">Glow</button>
+            </div>
+            <div class="mood-card" id="mood-card">
+              <h3>Calm appointment flow</h3>
+              <p>
+                Soft lighting, reassuring consultation time, and extra explanation for every treatment step.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-intro">
+              <p class="eyebrow">Smile Journey</p>
+              <h3>Your visit flows like a guided transformation.</h3>
+            </div>
+            <article>
+              <span>01</span>
+              <div class="timeline-copy">
+                <h3>Smile Scan</h3>
+                <p>We map shade, shape, and bite to understand both health and aesthetics.</p>
+              </div>
+              <div class="timeline-visual timeline-visual-scan" aria-hidden="true"></div>
+            </article>
+            <article>
+              <span>02</span>
+              <div class="timeline-copy">
+                <h3>Comfort Plan</h3>
+                <p>Noise, timing, and treatment pacing are adjusted to how you prefer to be cared for.</p>
+              </div>
+              <div class="timeline-visual timeline-visual-plan" aria-hidden="true"></div>
+            </article>
+            <article>
+              <span>03</span>
+              <div class="timeline-copy">
+                <h3>Radiant Finish</h3>
+                <p>Your appointment ends with a clear aftercare plan and a visibly polished result.</p>
+              </div>
+              <div class="timeline-visual timeline-visual-finish" aria-hidden="true"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="results">
+        <div class="section-heading">
+          <p class="eyebrow">Clinic Details</p>
+          <h2>Visit either clinic and choose the timing that fits your day.</h2>
+        </div>
+        <div class="results-grid">
+          <div class="before-after">
+            <div class="clinic-card-stack">
+              <article class="clinic-card">
+                <div class="service-badge">Dr Shad Dental Care</div>
+                <h3>Mondal Ganthi Road, Kolkata - 700052</h3>
+                <p>Timing: 10am to 2pm Monday to Thursday and Saturday.</p>
+              </article>
+              <article class="clinic-card">
+                <div class="service-badge">Hashmi Dental Clinic</div>
+                <h3>3/H/4 Raja Dinendra Street, Kolkata - 700009</h3>
+                <p>Timing: 6pm to 10pm Monday to Saturday.</p>
+              </article>
+            </div>
+          </div>
+          <div class="testimonial-stack">
+            <article class="testimonial is-highlighted">
+              <p>"Comfortable treatment, clear guidance, and friendly care from start to finish."</p>
+              <strong>Patient-first dental experience</strong>
+            </article>
+            <article class="testimonial">
+              <p>"Two clinic options make it easier to book appointments around work and family schedules."</p>
+              <strong>Flexible consultation timings</strong>
+            </article>
+            <article class="testimonial">
+              <p>"Professional oral and dental surgery care with a warm, reassuring approach."</p>
+              <strong>Trusted consultants in Kolkata</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Book Your Visit</p>
+          <h2>Tell us what kind of smile support you want, and we'll shape the appointment around you.</h2>
+        </div>
+        <div class="contact-grid">
+          <form class="booking-form" id="booking-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <label>
+              Treatment Interest
+              <select name="interest">
+                <option>Cleaning & checkup</option>
+                <option>Whitening</option>
+                <option>Veneers / smile design</option>
+                <option>Restorative treatment</option>
+                <option>Consultation</option>
+              </select>
+            </label>
+            <label>
+              What matters most?
+              <textarea name="message" rows="4" placeholder="Comfort, aesthetics, quick scheduling, family care..."></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send Request</button>
+            <p class="form-note" id="form-note" aria-live="polite"></p>
+          </form>
+
+          <aside class="info-card">
+            <h3>Contact & Hours</h3>
+            <p>Call us directly for appointments, treatment guidance, or clinic timing help.</p>
+            <ul class="feature-list">
+              <li>8013321512</li>
+              <li>7980548588</li>
+              <li>Morning and evening clinic availability in Kolkata</li>
+            </ul>
+            <div class="mini-tooth-row" aria-hidden="true">
+              <img src="assets/dr-shad-logo.svg" alt="">
+              <img src="assets/dr-shad-logo.svg" alt="">
+              <img src="assets/dr-shad-logo.svg" alt="">
+              <img src="assets/dr-shad-logo.svg" alt="">
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
